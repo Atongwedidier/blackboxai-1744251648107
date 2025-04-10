@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental - AutoElite</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                        roboto: ['Roboto', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-roboto">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-blue-600 font-inter">AutoElite</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-800 hover:text-blue-600 px-3 py-2 font-medium">Home</a>
+                    <a href="car-sales.html" class="text-gray-800 hover:text-blue-600 px-3 py-2 font-medium">Car Sales</a>
+                    <a href="car-rental.html" class="text-blue-600 px-3 py-2 font-medium">Car Rental</a>
+                    <a href="extra-services.html" class="text-gray-800 hover:text-blue-600 px-3 py-2 font-medium">Services</a>
+                    <a href="contact.html" class="text-gray-800 hover:text-blue-600 px-3 py-2 font-medium">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-800 hover:text-blue-600">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative pt-16">
+        <div class="absolute inset-0">
+            <img src="https://images.pexels.com/photos/3806288/pexels-photo-3806288.jpeg" 
+                 alt="Luxury rental cars" 
+                 class="w-full h-[400px] object-cover">
+            <div class="absolute inset-0 bg-gray-900 opacity-60"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto py-24 px-4">
+            <h1 class="text-4xl font-bold text-white font-inter mb-4">
+                Rent Your Dream Car Today
+            </h1>
+            <p class="text-xl text-white mb-8 max-w-3xl">
+                Experience luxury and comfort with our premium rental fleet
+            </p>
+        </div>
+    </div>
+
+    <!-- Booking Form Section -->
+    <div class="max-w-7xl mx-auto px-4 py-12">
+        <div class="bg-white rounded-xl shadow-lg p-8">
+            <h2 class="text-2xl font-bold mb-6 font-inter">Book Your Rental</h2>
+            <form class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Pick-up Date</label>
+                    <input type="date" class="w-full border rounded-lg px-3 py-2">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Return Date</label>
+                    <input type="date" class="w-full border rounded-lg px-3 py-2">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
+                    <input type="text" class="w-full border rounded-lg px-3 py-2" placeholder="John Doe">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                    <input type="email" class="w-full border rounded-lg px-3 py-2" placeholder="john@example.com">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Phone</label>
+                    <input type="tel" class="w-full border rounded-lg px-3 py-2" placeholder="+1 (555) 000-0000">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Vehicle Type</label>
+                    <select class="w-full border rounded-lg px-3 py-2">
+                        <option value="">Select a vehicle</option>
+                        <option value="luxury">Luxury Sedan</option>
+                        <option value="suv">Premium SUV</option>
+                        <option value="sports">Sports Car</option>
+                        <option value="executive">Executive Car</option>
+                    </select>
+                </div>
+                <div class="md:col-span-2">
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Additional Requirements</label>
+                    <textarea class="w-full border rounded-lg px-3 py-2 h-24" placeholder="Any special requests or requirements?"></textarea>
+                </div>
+                <div class="md:col-span-2">
+                    <button type="submit" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition duration-300">
+                        Book Now
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Available Vehicles -->
+    <div class="bg-gray-50 py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 font-inter">Available Rental Vehicles</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Vehicle 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg" 
+                         alt="Luxury Sedan" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 font-inter">Mercedes-Benz E-Class</h3>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-gray-600">Luxury Sedan</span>
+                            <span class="text-xl font-bold text-blue-600">$199/day</span>
+                        </div>
+                        <div class="space-y-2 mb-4">
+                            <div class="flex items-center text-gray-600">
+                                <i class="fas fa-users mr-2"></i>
+                                <span>5 Passengers</span>
+                            </div>
+                            <div class="flex items-center text-gray-600">
+                                <i class="fas fa-suitcase mr-2"></i>
+                                <span>4 Luggage</span>
+                            </div>
+                            <div class="flex items-center text-gray-600">
+                                <i class="fas fa-cog mr-2"></i>
+                                <span>Automatic</span>
+                            </div>
+                        </div>
+                        <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                            Select Vehicle
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Vehicle 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg" 
+                         alt="Premium SUV" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 font-inter">BMW X5</h3>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-gray-600">Premium SUV</span>
+                            <span class="text-xl font-bold text-blue-600">$249/day</span>
+                        </div>
+                        <div class="space-y-2 mb-4">
+                            <div class="flex items-center text-gray-600">
+                                <i class="fas fa-users mr-2"></i>
+                                <span>7 Passengers</span>
+                            </div>
+                            <div class="flex items-center text-gray-600">
+                                <i class="fas fa-suitcase mr-2"></i>
+                                <span>5 Luggage</span>
+                            </div>
+                            <div class="flex items-center text-gray-600">
+                                <i class="fas fa-cog mr-2"></i>
+                                <span>Automatic</span>
+                            </div>
+                        </div>
+                        <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                            Select Vehicle
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Vehicle 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://images.pexels.com/photos/3752169/pexels-photo-3752169.jpeg" 
+                         alt="Sports Car" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 font-inter">Porsche 911</h3>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-gray-600">Sports Car</span>
+                            <span class="text-xl font-bold text-blue-600">$399/day</span>
+                        </div>
+                        <div class="space-y-2 mb-4">
+                            <div class="flex items-center text-gray-600">
+                                <i class="fas fa-users mr-2"></i>
+                                <span>2 Passengers</span>
+                            </div>
+                            <div class="flex items-center text-gray-600">
+                                <i class="fas fa-suitcase mr-2"></i>
+                                <span>2 Luggage</span>
+                            </div>
+                            <div class="flex items-center text-gray-600">
+                                <i class="fas fa-cog mr-2"></i>
+                                <span>Automatic</span>
+                            </div>
+                        </div>
+                        <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                            Select Vehicle
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rental Terms -->
+    <div class="max-w-7xl mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold mb-8 font-inter">Rental Terms & Conditions</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="space-y-4">
+                <h3 class="text-xl font-bold mb-4 font-inter">Requirements</h3>
+                <ul class="space-y-2">
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                        <span>Valid driver's license (minimum 2 years)</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                        <span>Minimum age: 25 years</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                        <span>Credit card for security deposit</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                        <span>Proof of insurance</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="space-y-4">
+                <h3 class="text-xl font-bold mb-4 font-inter">Included in Rental</h3>
+                <ul class="space-y-2">
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                        <span>Comprehensive insurance coverage</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                        <span>24/7 roadside assistance</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                        <span>Unlimited mileage</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                        <span>Full tank of fuel</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 font-inter">AutoElite</h3>
+                    <p class="text-gray-400">Your trusted partner in automotive and business solutions.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4 font-inter">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="car-sales.html" class="text-gray-400 hover:text-white">Car Sales</a></li>
+                        <li><a href="car-rental.html" class="text-gray-400 hover:text-white">Car Rental</a></li>
+                        <li><a href="extra-services.html" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4 font-inter">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="extra-services.html#digital" class="text-gray-400 hover:text-white">Digital Marketing</a></li>
+                        <li><a href="extra-services.html#affiliate" class="text-gray-400 hover:text-white">Affiliate Marketing</a></li>
+                        <li><a href="extra-services.html#contractors" class="text-gray-400 hover:text-white">Subcontracting</a></li>
+                        <li><a href="extra-services.html#additional" class="text-gray-400 hover:text-white">Additional Services</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4 font-inter">Connect With Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl">
+                            <i class="fab fa-snapchat"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 AutoElite. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <div class="hidden fixed inset-0 bg-gray-800 bg-opacity-50 z-50" id="mobile-menu">
+        <div class="bg-white h-full w-64 p-4">
+            <div class="flex justify-between items-center mb-8">
+                <span class="text-xl font-bold text-blue-600">AutoElite</span>
+                <button class="text-gray-800" onclick="toggleMobileMenu()">
+                    <i class="fas fa-times text-2xl"></i>
+                </button>
+            </div>
+            <div class="flex flex-col space-y-4">
+                <a href="index.html" class="text-gray-800 hover:text-blue-600 py-2">Home</a>
+                <a href="car-sales.html" class="text-gray-800 hover:text-blue-600 py-2">Car Sales</a>
+                <a href="car-rental.html" class="text-gray-800 hover:text-blue-600 py-2">Car Rental</a>
+                <a href="extra-services.html" class="text-gray-800 hover:text-blue-600 py-2">Services</a>
+                <a href="contact.html" class="text-gray-800 hover:text-blue-600 py-2">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        // Add event listener to mobile menu button
+        document.querySelector('.md\\:hidden button').addEventListener('click', toggleMobileMenu);
+
+        // Form validation
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Add your form validation and submission logic here
+            alert('Thank you for your booking request. We will contact you shortly.');
+        });
+    </script>
+</body>
+</html>
