@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Services - AutoElite</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                        roboto: ['Roboto', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-roboto">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-blue-600 font-inter">AutoElite</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-800 hover:text-blue-600 px-3 py-2 font-medium">Home</a>
+                    <a href="car-sales.html" class="text-gray-800 hover:text-blue-600 px-3 py-2 font-medium">Car Sales</a>
+                    <a href="car-rental.html" class="text-gray-800 hover:text-blue-600 px-3 py-2 font-medium">Car Rental</a>
+                    <a href="extra-services.html" class="text-blue-600 px-3 py-2 font-medium">Services</a>
+                    <a href="contact.html" class="text-gray-800 hover:text-blue-600 px-3 py-2 font-medium">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-800 hover:text-blue-600">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative pt-16">
+        <div class="absolute inset-0">
+            <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg" 
+                 alt="Business services" 
+                 class="w-full h-[400px] object-cover">
+            <div class="absolute inset-0 bg-gray-900 opacity-60"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto py-24 px-4">
+            <h1 class="text-4xl font-bold text-white font-inter mb-4">
+                Comprehensive Business Solutions
+            </h1>
+            <p class="text-xl text-white mb-8 max-w-3xl">
+                From digital marketing to automated services, we provide everything your business needs to thrive
+            </p>
+        </div>
+    </div>
+
+    <!-- Digital Marketing Section -->
+    <div id="digital" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 font-inter text-center">Digital Marketing Solutions</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition duration-300">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 font-inter">Website Development</h3>
+                    <p class="text-gray-600 mb-4">Custom-built websites that represent your brand and drive conversions</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Responsive Design</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>SEO Optimization</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>E-commerce Integration</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                        Learn More
+                    </button>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition duration-300">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-hashtag"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 font-inter">Social Media Management</h3>
+                    <p class="text-gray-600 mb-4">Comprehensive social media presence across all major platforms</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Content Creation</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Community Management</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Analytics & Reporting</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                        Learn More
+                    </button>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition duration-300">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-ad"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 font-inter">Digital Advertising</h3>
+                    <p class="text-gray-600 mb-4">Targeted advertising campaigns that deliver results</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>PPC Campaigns</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Social Media Ads</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Retargeting</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Affiliate Marketing Section -->
+    <div id="affiliate" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 font-inter text-center">Affiliate Marketing Program</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <h3 class="text-2xl font-bold mb-6 font-inter">Join Our Network</h3>
+                    <p class="text-gray-600 mb-6">Partner with us and earn commissions by promoting our products and services</p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span>High commission rates on all sales</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span>Dedicated affiliate support team</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span>Real-time tracking and reporting</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span>Monthly payments</span>
+                        </li>
+                    </ul>
+                    <button class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition duration-300">
+                        Become an Affiliate
+                    </button>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <h3 class="text-2xl font-bold mb-6 font-inter">Commission Structure</h3>
+                    <div class="space-y-6">
+                        <div class="border-b pb-4">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-bold">Car Sales</span>
+                                <span class="text-blue-600 font-bold">5% Commission</span>
+                            </div>
+                            <p class="text-gray-600">Per successful car sale referral</p>
+                        </div>
+                        <div class="border-b pb-4">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-bold">Car Rentals</span>
+                                <span class="text-blue-600 font-bold">10% Commission</span>
+                            </div>
+                            <p class="text-gray-600">Per completed rental booking</p>
+                        </div>
+                        <div class="border-b pb-4">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-bold">Digital Services</span>
+                                <span class="text-blue-600 font-bold">15% Commission</span>
+                            </div>
+                            <p class="text-gray-600">On all digital marketing services</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Subcontracting Section -->
+    <div id="contractors" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 font-inter text-center">Professional Subcontracting Services</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition duration-300">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 font-inter">Mechanics</h3>
+                    <p class="text-gray-600 mb-4">Expert automotive repair and maintenance services</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Certified Professionals</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Quality Guarantees</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Competitive Rates</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                        Find a Mechanic
+                    </button>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition duration-300">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 font-inter">Contractors</h3>
+                    <p class="text-gray-600 mb-4">Professional construction and renovation services</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Licensed Contractors</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Project Management</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Free Estimates</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                        Find a Contractor
+                    </button>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition duration-300">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-broom"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 font-inter">Cleaning Services</h3>
+                    <p class="text-gray-600 mb-4">Professional cleaning and maintenance services</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Trained Staff</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Eco-friendly Options</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Flexible Scheduling</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                        Book Cleaning
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional Services Section -->
+    <div id="additional" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 font-inter text-center">Additional Services</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Laundromat Service -->
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="text-blue-600 text-4xl">
+                            <i class="fas fa-washer"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2 font-inter">Laundromat Services</h3>
+                            <p class="text-gray-600 mb-4">Modern self-service washing facilities</p>
+                            <ul class="space-y-2 mb-6">
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>
+                                    <span>High-capacity machines</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>
+                                    <span>24/7 availability</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>
+                                    <span>Digital payment options</span>
+                                </li>
+                            </ul>
+                            <button class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                                Find Location
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Marketplace -->
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="text-blue-600 text-4xl">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2 font-inter">Online Marketplace</h3>
+                            <p class="text-gray-600 mb-4">Buy and sell in our community marketplace</p>
+                            <ul class="space-y-2 mb-6">
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>
+                                    <span>Secure transactions</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>
+                                    <span>Verified sellers</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>
+                                    <span>Local delivery options</span>
+                                </li>
+                            </ul>
+                            <button class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                                Visit Marketplace
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Automated Vendors -->
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="text-blue-600 text-4xl">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2 font-inter">Automated Vendors</h3>
+                            <p class="text-gray-600 mb-4">24/7 automated vending solutions</p>
+                            <ul class="space-y-2 mb-6">
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>
+                                    <span>Contactless payments</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>
+                                    <span>Real-time inventory</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>
+                                    <span>Smart monitoring</span>
+                                </li>
+                            </ul>
+                            <button class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Active Pursuits -->
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="text-blue-600 text-4xl">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2 font-inter">Active Pursuits</h3>
+                            <p class="text-gray-600 mb-4">Business growth and development opportunities</p>
+                            <ul class="space-y-2 mb-6">
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>
+                                    <span>Business consulting</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>
+                                    <span>Growth strategies</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>
+                                    <span>Market analysis</span>
+                                </li>
+                            </ul>
+                            <button class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                                Get Started
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 font-inter">AutoElite</h3>
+                    <p class="text-gray-400">Your trusted partner in automotive and business solutions.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4 font-inter">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="car-sales.html" class="text-gray-400 hover:text-white">Car Sales</a></li>
+                        <li><a href="car-rental.html" class="text-gray-400 hover:text-white">Car Rental</a></li>
+                        <li><a href="extra-services.html" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4 font-inter">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#digital" class="text-gray-400 hover:text-white">Digital Marketing</a></li>
+                        <li><a href="#affiliate" class="text-gray-400 hover:text-white">Affiliate Marketing</a></li>
+                        <li><a href="#contractors" class="text-gray-400 hover:text-white">Subcontracting</a></li>
+                        <li><a href="#additional" class="text-gray-400 hover:text-white">Additional Services</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4 font-inter">Connect With Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl">
+                            <i class="fab fa-snapchat"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 AutoElite. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <div class="hidden fixed inset-0 bg-gray-800 bg-opacity-50 z-50" id="mobile-menu">
+        <div class="bg-white h-full w-64 p-4">
+            <div class="flex justify-between items-center mb-8">
+                <span class="text-xl font-bold text-blue-600">AutoElite</span>
+                <button class="text-gray-800" onclick="toggleMobileMenu()">
+                    <i class="fas fa-times text-2xl"></i>
+                </button>
+            </div>
+            <div class="flex flex-col space-y-4">
+                <a href="index.html" class="text-gray-800 hover:text-blue-600 py-2">Home</a>
+                <a href="car-sales.html" class="text-gray-800 hover:text-blue-600 py-2">Car Sales</a>
+                <a href="car-rental.html" class="text-gray-800 hover:text-blue-600 py-2">Car Rental</a>
+                <a href="extra-services.html" class="text-gray-800 hover:text-blue-600 py-2">Services</a>
+                <a href="contact.html" class="text-gray-800 hover:text-blue-600 py-2">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        // Add event listener to mobile menu button
+        document.querySelector('.md\\:hidden button').addEventListener('click', toggleMobileMenu);
+    </script>
+</body>
+</html>
